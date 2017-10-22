@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rel_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="10%w"
+        app:layout_paddingRightPercent="1%">
+
+
+        <ImageView
+            app:layout_marginLeftPercent="4%"
+            android:id="@+id/iv_shopBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/aa3"
+            app:layout_heightPercent="5%w"
+            app:layout_widthPercent="5%" />
+
+        <TextView
+            android:textColor="#000000"
+            app:layout_textSizePercent="4%w"
+            android:layout_centerInParent="true"
+            android:text="购物车"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_widthPercent="23%w">
+
+            <TextView
+                android:gravity="center"
+                android:text="编辑"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                app:layout_heightPercent="35%w"
+                app:layout_widthPercent="35%w" />
+
+            <ImageView
+                app:layout_heightPercent="35%w"
+                app:layout_widthPercent="35%w"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/infob" />
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="#cccccc"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+    <com.liaoinstan.springview.widget.SpringView
+        android:id="@+id/Sv_shop"
+        android:layout_below="@+id/rel_head"
+        android:layout_above="@+id/rel_bill"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/Recy_Cargoods"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </com.liaoinstan.springview.widget.SpringView>
+
+
+
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rel_bill"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="12%w">
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:gravity="center_vertical"
+            app:layout_paddingLeftPercent="5%w"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            app:layout_heightPercent="12%w"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/iv_selectAll"
+                app:layout_widthPercent="5%w"
+                app:layout_heightPercent="5%w"
+                android:button="@drawable/car_sele"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_selectAll"
+                android:layout_marginLeft="5dp"
+                app:layout_textSizePercent="4%w"
+                android:text="全选"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="15sp"
+                android:id="@+id/tv_AllPrice"
+                app:layout_marginLeftPercent="15%w"
+                android:text="合计：￥0.00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+        <Button
+            app:layout_textSizePercent="4%w"
+            android:textStyle="bold"
+            android:id="@+id/btn_Bill"
+            android:textColor="#ffffff"
+            android:background="#ff0000"
+            android:layout_alignParentRight="true"
+            android:text="去结算"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_widthPercent="33%w"/>
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+</com.zhy.android.percent.support.PercentRelativeLayout>

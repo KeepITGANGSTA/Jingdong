@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/wq" android:duration="40"/>
+    <item android:drawable="@drawable/wr" android:duration="40"/>
+    <item android:drawable="@drawable/ws" android:duration="40"/>
+    <item android:drawable="@drawable/wt" android:duration="40"/>
+
+</animation-list>

@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="10%w"
+        >
+
+
+        <ImageView
+            app:layout_marginLeftPercent="5%"
+            android:id="@+id/iv_settingBack"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/aa3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_widthPercent="4%"
+            app:layout_heightPercent="4%w"/>
+
+        <TextView
+            app:layout_textSizePercent="3%w"
+            android:textColor="#000000"
+            android:layout_centerInParent="true"
+            android:text="账户设置"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="#cccccc"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"/>
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="10%">
+
+
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/lin_settingLogin"
+            app:layout_marginLeftPercent="5%"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="300dp"
+            android:layout_height="match_parent">
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/iv_settingIcon"
+                android:layout_centerVertical="true"
+                app:layout_widthPercent="17%w"
+                app:layout_heightPercent="17%w"
+                android:src="@mipmap/b5i"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:riv_oval="true"
+                />
+            <TextView
+                android:id="@+id/tv_settingNickName"
+                app:layout_marginLeftPercent="5%"
+                android:textColor="#000000"
+                android:text="登录/注册"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <ImageView
+            app:layout_marginRightPercent="2%"
+            app:layout_widthPercent="4%"
+            app:layout_heightPercent="4%w"
+            android:src="@mipmap/apu"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="10dp"
+    android:background="#cccccc"
+    />
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="10%w"
+        >
+
+        <TextView
+            app:layout_marginLeftPercent="3%"
+            android:text="会员俱乐部"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            app:layout_marginRightPercent="2%"
+            app:layout_widthPercent="4%"
+            app:layout_heightPercent="4%w"
+            android:src="@mipmap/apu"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="#cccccc"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="10%w"
+        >
+
+        <TextView
+            app:layout_marginLeftPercent="3%"
+            android:text="会员俱乐部"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            app:layout_marginRightPercent="2%"
+            app:layout_widthPercent="4%"
+            app:layout_heightPercent="4%w"
+            android:src="@mipmap/apu"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="#cccccc"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="10%w"
+        >
+
+        <TextView
+            app:layout_marginLeftPercent="3%"
+            android:text="会员俱乐部"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            app:layout_marginRightPercent="2%"
+            app:layout_widthPercent="4%"
+            app:layout_heightPercent="4%w"
+            android:src="@mipmap/apu"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="#cccccc"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rel_settingAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="10%w"
+        >
+
+        <TextView
+            app:layout_marginLeftPercent="3%"
+            android:text="地址管理"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            app:layout_marginRightPercent="2%"
+            app:layout_widthPercent="4%"
+            app:layout_heightPercent="4%w"
+            android:src="@mipmap/apu"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="#cccccc"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+       <com.zhy.android.percent.support.PercentRelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+           app:layout_heightPercent="10%w"
+    >
+
+    <TextView
+        app:layout_marginLeftPercent="3%"
+        android:text="会员俱乐部"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        app:layout_marginRightPercent="2%"
+        app:layout_widthPercent="4%"
+        app:layout_heightPercent="4%w"
+        android:src="@mipmap/apu"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:background="#cccccc"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1sp"/>
+</com.zhy.android.percent.support.PercentRelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#cccccc"
+        />
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="10%w"
+        >
+
+        <TextView
+            app:layout_marginLeftPercent="3%"
+            android:text="会员俱乐部"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            app:layout_marginRightPercent="2%"
+            app:layout_widthPercent="4%"
+            app:layout_heightPercent="4%w"
+            android:src="@mipmap/apu"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="#cccccc"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="10%w"
+        >
+
+        <TextView
+            app:layout_marginLeftPercent="3%"
+            android:text="会员俱乐部"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            app:layout_marginRightPercent="2%"
+            app:layout_widthPercent="4%"
+            app:layout_heightPercent="4%w"
+            android:src="@mipmap/apu"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="#cccccc"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="10%w"
+        >
+
+        <TextView
+            app:layout_marginLeftPercent="3%"
+            android:text="会员俱乐部"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            app:layout_marginRightPercent="2%"
+            app:layout_widthPercent="4%"
+            app:layout_heightPercent="4%w"
+            android:src="@mipmap/apu"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="#cccccc"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#cccccc"
+        />
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rel_settingSet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="10%w"
+        >
+
+        <TextView
+            app:layout_marginLeftPercent="3%"
+            android:text="设置"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            app:layout_marginRightPercent="2%"
+            app:layout_widthPercent="4%"
+            app:layout_heightPercent="4%w"
+            android:src="@mipmap/apu"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="#cccccc"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="10%w"
+        >
+
+        <TextView
+            app:layout_marginLeftPercent="3%"
+            android:text="会员俱乐部"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            app:layout_marginRightPercent="2%"
+            app:layout_widthPercent="4%"
+            app:layout_heightPercent="4%w"
+            android:src="@mipmap/apu"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="#cccccc"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#cccccc"
+        />
+    <Button
+        android:visibility="visible"
+        android:id="@+id/btn_exit"
+        android:background="#ffffff"
+        android:text="退出登录"
+        app:layout_heightPercent="10%w"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#cccccc"
+        />
+
+</com.zhy.android.percent.support.PercentLinearLayout>

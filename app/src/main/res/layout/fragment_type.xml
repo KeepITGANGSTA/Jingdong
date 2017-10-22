@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="#F3F5F7"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <android.support.v7.widget.Toolbar
+        android:background="#ffffff"
+        android:fitsSystemWindows="true"
+        app:contentInsetStart="0dp"
+        android:id="@+id/Type_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <include layout="@layout/type_toolbar"/>
+    </android.support.v7.widget.Toolbar>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+            <ScrollView
+                android:id="@+id/tools_scrlllview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:fadingEdge="none"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:id="@+id/lin_tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical" />
+            </ScrollView>
+
+            <FrameLayout
+                android:id="@+id/framelayout"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+</LinearLayout>

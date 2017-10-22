@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="10%w"
+
+        app:layout_paddingRightPercent="1%">
+
+
+        <ImageView
+            app:layout_marginLeftPercent="4%"
+            android:id="@+id/iv_detailsBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/aa3"
+            app:layout_heightPercent="5%w"
+            app:layout_widthPercent="5%" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/mTabLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            app:layout_widthPercent="60%w"
+            app:tabMode="fixed" />
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_widthPercent="14%w">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/as4"
+                app:layout_heightPercent="35%w"
+                app:layout_widthPercent="35%w" />
+
+            <ImageView
+                app:layout_heightPercent="35%w"
+                app:layout_widthPercent="35%w"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/a_f" />
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="#cccccc"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.view.ViewPager
+
+            android:id="@+id/Goods_Vp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="13%w"
+            android:id="@+id/layout"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:weightSum="6"
+            >
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:text="客服"
+                android:drawableTop="@drawable/kefu"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:text="店铺"
+                android:drawableTop="@drawable/dianpu"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:text="关注"
+                android:drawableTop="@drawable/guanzhu"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/tv_shoppingCar"
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:text="购物车"
+                android:drawableTop="@drawable/gouwuche"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+            <Button
+                android:id="@+id/btn_joinCar"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="加入购物车"
+                android:textColor="#fff"
+                android:background="#f00"
+                />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

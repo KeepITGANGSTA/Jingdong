@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:background="#FFF9F9"
+        app:layout_paddingLeftPercent="3%w"
+        app:layout_heightPercent="10%w"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/iv_CarShopAll"
+            app:layout_widthPercent="5%w"
+            app:layout_heightPercent="5%w"
+            android:button="@drawable/car_sele"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_carShopName"
+            app:layout_textSizePercent="4%w"
+            android:layout_marginLeft="10dp"
+            android:text="商家"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:background="#ffffff"
+        android:id="@+id/Recy_car"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

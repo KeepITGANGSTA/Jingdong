@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:orientation="horizontal"
+        app:layout_heightPercent="30%w"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            app:layout_paddingPercent="4%w"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_billOrderid"
+                android:textColor="#000000"
+                app:layout_textSizePercent="6%w"
+                android:layout_alignParentTop="true"
+                android:text="序列号"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_billTime"
+                android:textColor="#000000"
+                app:layout_textSizePercent="6%w"
+                android:layout_alignParentBottom="true"
+                android:text="创建时间"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            app:layout_paddingPercent="4%w"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_billState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="订单状态"
+                android:textColor="#ff0000"
+                android:textStyle="bold"
+                app:layout_textSizePercent="7%w" />
+
+            <TextView
+                android:id="@+id/tv_billPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="创建时间"
+                android:textColor="#ff0000"
+                android:textStyle="bold"
+                app:layout_textSizePercent="7%w" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:orientation="horizontal"
+        app:layout_heightPercent="10%w"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_cancleBill"
+            android:text="修改订单"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_payBill"
+            android:text="去支付"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

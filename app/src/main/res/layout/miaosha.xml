@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/jd_miaosha"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            >
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/clock"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+            <TextView
+                android:textColor="#ff0000"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"
+                android:text="京东秒杀"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            >
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:textColor="#ff0000"
+                android:text="京东尖货秒"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/jt_ms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:scrollbars="none"
+        android:id="@+id/mMiaoRecy"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+
+</LinearLayout>

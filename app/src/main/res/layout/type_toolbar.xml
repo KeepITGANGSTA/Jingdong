@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="7dp">
+
+
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/iv_clean"
+            app:layout_widthPercent="45%h"
+            app:layout_heightPercent="45%"
+            android:src="@mipmap/cleanb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_weight="1"
+        android:id="@+id/rel_TypeEdit"
+        app:layout_marginPercent="2%"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/edit_bgb"
+        android:layout_centerHorizontal="true"
+        app:layout_widthPercent="65%w"
+        app:layout_heightPercent="10%w"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_fada"
+            android:layout_alignParentLeft="true"
+            app:layout_widthPercent="10%w"
+            app:layout_heightPercent="10%w"
+            android:src="@mipmap/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:text="消息推送"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            app:layout_widthPercent="10%w"
+            app:layout_heightPercent="10%w"
+            android:src="@mipmap/ati"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+
+
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/iv_info"
+            app:layout_widthPercent="45%h"
+            app:layout_heightPercent="45%"
+            android:src="@mipmap/infob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

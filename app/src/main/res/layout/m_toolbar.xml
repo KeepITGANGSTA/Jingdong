@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout
+
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="7dp">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/lin_clean"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_clean"
+            app:layout_widthPercent="3%h"
+            app:layout_heightPercent="3%"
+            android:src="@mipmap/clean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_clean"
+            android:layout_marginTop="5dp"
+            app:layout_textSizePercent="3%w"
+            android:textColor="#ffffff"
+            android:text="扫啊扫"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rel_Edit"
+        app:layout_marginPercent="2%"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/edit_bg"
+        android:layout_centerHorizontal="true"
+        app:layout_widthPercent="65%w"
+        app:layout_heightPercent="10%w"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_fada"
+            android:layout_alignParentLeft="true"
+            app:layout_widthPercent="10%w"
+            app:layout_heightPercent="10%w"
+            android:src="@mipmap/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:text="消息推送"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            app:layout_widthPercent="10%w"
+            app:layout_heightPercent="10%w"
+            android:src="@mipmap/ati"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+    <ImageView
+        android:layout_alignParentRight="true"
+        app:layout_widthPercent="10%w"
+        app:layout_heightPercent="10%w"
+        android:src="@mipmap/qiang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_marginLeft="5dp"
+        android:id="@+id/lin_info"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_info"
+            app:layout_widthPercent="3%h"
+            app:layout_heightPercent="3%"
+            android:src="@mipmap/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_info"
+            android:textColor="#ffffff"
+            android:text="消息"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

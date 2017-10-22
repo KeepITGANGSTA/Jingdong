@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        app:layout_paddingLeftPercent="3%w"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="30%w">
+
+        <CheckBox
+            android:layout_gravity="center_vertical"
+            android:id="@+id/iv_carGoodsSele"
+            app:layout_widthPercent="4%w"
+            app:layout_heightPercent="4%w"
+            android:button="@drawable/car_sele"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/iv_carItem"
+            app:layout_marginLeftPercent="3%w"
+            app:layout_widthPercent="30%w"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/tv_carTitle"
+                app:layout_textSizePercent="5%w"
+                android:textColor="#000000"
+                android:text="标题"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/tv_carSubHead"
+                app:layout_textSizePercent="5%w"
+                android:textColor="#cccccc"
+                android:text="副标题"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_carBargain"
+                    android:layout_alignParentLeft="true"
+                    android:text="￥价格"
+                    android:textColor="#ff0000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:background="@drawable/details_btn"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:layout_widthPercent="25%w"
+                    app:layout_heightPercent="8%w"
+                    app:layout_marginRightPercent="3%"
+                    >
+                    <TextView
+                        android:textColor="#000000"
+                        android:id="@+id/tv_CarSumCut"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="-"
+                        android:background="@drawable/details_btn"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+                    <EditText
+                        android:gravity="center"
+                        android:id="@+id/ed_CarGoodsNum"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:background="@null"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:textColor="#000000"
+                        android:id="@+id/tv_CarsumPlus"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="+"
+                        android:background="@drawable/details_btn"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>
